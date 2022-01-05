@@ -1,0 +1,892 @@
+/* Import */
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Poppins&display=swap");
+/* Global attributes */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  /* font-family: "Dosis", sans-serif; */
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Dosis", sans-serif;
+}
+
+/* Global variables */
+:root {
+  --light-color: #ffffff;
+  --dark-color: #000000;
+  --grey-color: #f4f4f4;
+  --hover-color: #333;
+  --primary-color: #00204a;
+  --secondary-color: #005792;
+  --tertiary-color: #00bbf0;
+  --danger-color: #e33e5a;
+  --yellow-color: #f6d912;
+  --light-yellow-color: #ffd739;
+  --orange-color: #ed8a0a;
+  --dark-purple-color: #301551;
+  --light-purple-color: #492b7c;
+  --light-save-color: #45eba5;
+  --dark-save-color: #3abd12;
+  --tertiary-save-color: #163a5f;
+  --brown-color: #52575d;
+}
+
+/* Padding on both axis */
+
+.p1 {
+  padding: 10px 10px;
+}
+.p2 {
+  padding: 20px 20px;
+}
+.p3 {
+  padding: 30px 30px;
+}
+.p4 {
+  padding: 40px 40px;
+}
+.p5 {
+  padding: 50px 50px;
+}
+.p6 {
+  padding: 60px 60px;
+}
+.p7 {
+  padding: 70px 70px;
+}
+
+/* Padding on the y-axis */
+
+.py-1 {
+  padding: 10px 0;
+}
+.py-2 {
+  padding: 20px 0;
+}
+.py-3 {
+  padding: 30px 0;
+}
+.py-4 {
+  padding: 40px 0;
+}
+.py-5 {
+  padding: 50px 0;
+}
+.py-6 {
+  padding: 60px 0;
+}
+.py-7 {
+  padding: 70px 0;
+}
+
+/* Padding on the x-axis */
+
+.px-1 {
+  padding: 0 10px;
+}
+.px-2 {
+  padding: 0 20px;
+}
+.px-3 {
+  padding: 0 30px;
+}
+.px-4 {
+  padding: 0 40px;
+}
+.px-5 {
+  padding: 0 50px;
+}
+.px-6 {
+  padding: 0 60px;
+}
+.px-7 {
+  padding: 0 70px;
+}
+
+/* Margin on both axis */
+
+.m1 {
+  margin: 10rem 10rem;
+}
+.m2 {
+  margin: 20rem 20rem;
+}
+.m3 {
+  margin: 30rem 30rem;
+}
+.m4 {
+  margin: 40rem 40rem;
+}
+.m5 {
+  margin: 50rem 50rem;
+}
+.m6 {
+  margin: 60rem 60rem;
+}
+.m7 {
+  margin: 7rem 70rem;
+}
+
+/* Margin on the y-axis */
+
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 2rem 0;
+}
+.my-3 {
+  margin: 3rem 0;
+}
+.my-4 {
+  margin: 4rem 0;
+}
+.my-5 {
+  margin: 5rem 0;
+}
+.my-6 {
+  margin: 6rem 0;
+}
+.my-7 {
+  margin: 7rem 0;
+}
+.my-8 {
+  margin: 8rem 0;
+}
+
+/* Margin on the x-axis */
+
+.mx-1 {
+  margin: 0 1rem;
+}
+.mx-2 {
+  margin: 0 2rem;
+}
+.mx-3 {
+  margin: 0 3rem;
+}
+.mx-4 {
+  margin: 0 4rem;
+}
+.mx-5 {
+  margin: 0 5rem;
+}
+.mx-6 {
+  margin: 0 6rem;
+}
+.mx-7 {
+  margin: 0 7rem;
+}
+.mx-8 {
+  margin: 0 8rem;
+}
+
+/* Margin and padding top and bottom, right and left */
+.pt-1 {
+  padding: 10px, 0, 0, 0;
+}
+.pt-2 {
+  padding: 20px, 0, 0, 0;
+}
+.pt-3 {
+  padding: 30px, 0, 0, 0;
+}
+.pt-4 {
+  padding: 40px, 0, 0, 0;
+}
+.pt-5 {
+  padding: 50px, 0, 0, 0;
+}
+.pt-6 {
+  padding: 60px, 0, 0, 0;
+}
+.pt-7 {
+  padding: 70px, 0, 0, 0;
+}
+.pb-1 {
+  padding: 0, 0, 10px, 0;
+}
+.pb-2 {
+  padding: 0, 0, 20px, 0;
+}
+.pb-3 {
+  padding: 0, 0, 30px, 0;
+}
+.pb-4 {
+  padding: 0, 0, 40px, 0;
+}
+.pb-5 {
+  padding: 0, 0, 50px, 0;
+}
+.pb-6 {
+  padding: 0, 0, 60px, 0;
+}
+.pb-7 {
+  padding: 0, 0, 70px, 0;
+}
+.pl-1 {
+  padding: 0, 10px, 0, 0;
+}
+.pl-2 {
+  padding: 0, 20px, 0, 0;
+}
+.pl-3 {
+  padding: 0, 30px, 0, 0;
+}
+.pl-4 {
+  padding: 0, 40px, 0, 0;
+}
+.pl-5 {
+  padding: 0, 50px, 0, 0;
+}
+.pl-6 {
+  padding: 0, 50px, 0, 0;
+}
+.pl-7 {
+  padding: 0, 70px, 0, 0;
+}
+.pr-1 {
+  padding: 0, 0, 0, 10px;
+}
+.pr-2 {
+  padding: 0, 0, 0, 20px;
+}
+.pr-3 {
+  padding: 0, 0, 0, 30px;
+}
+.pr-4 {
+  padding: 0, 0, 0, 40px;
+}
+.pr-5 {
+  padding: 0, 0, 0, 50px;
+}
+.pr-6 {
+  padding: 0, 0, 0, 60px;
+}
+.pr-7 {
+  padding: 0, 0, 0, 70px;
+}
+.mt-1 {
+  margin: 1rem, 0, 0, 0;
+}
+.mt-2 {
+  margin: 2rem, 0, 0, 0;
+}
+.mt-3 {
+  margin: 3rem, 0, 0, 0;
+}
+.mt-4 {
+  margin: 4rem, 0, 0, 0;
+}
+.mt-5 {
+  margin: 5rem, 0, 0, 0;
+}
+.mt-6 {
+  margin: 6rem, 0, 0, 0;
+}
+.mt-7 {
+  margin: 7rem, 0, 0, 0;
+}
+.mb-1 {
+  margin: 0, 0, 1rem, 0;
+}
+.mb-2 {
+  margin: 0, 0, 2rem, 0;
+}
+.mb-3 {
+  margin: 0, 0, 3rem, 0;
+}
+.mb-4 {
+  margin: 0, 0, 4rem, 0;
+}
+.mb-5 {
+  margin: 0, 0, 5rem, 0;
+}
+.mb-6 {
+  margin: 0, 0, 6rem, 0;
+}
+.mb-7 {
+  margin: 0, 0, 7rem, 0;
+}
+.ml-1 {
+  margin: 0, 1rem, 0, 0;
+}
+.ml-2 {
+  margin: 0, 2rem, 0, 0;
+}
+.ml-3 {
+  margin: 0, 3rem, 0, 0;
+}
+.ml-4 {
+  margin: 0, 4rem, 0, 0;
+}
+.ml-5 {
+  margin: 0, 5rem, 0, 0;
+}
+.ml-6 {
+  margin: 0, 6rem, 0, 0;
+}
+.ml-7 {
+  margin: 0, 7rem, 0, 0;
+}
+.mr-1 {
+  margin: 0, 0, 0, 1rem;
+}
+.mr-2 {
+  margin: 0, 0, 0, 2rem;
+}
+.mr-3 {
+  margin: 0, 0, 0, 3rem;
+}
+.mr-4 {
+  margin: 0, 0, 0, 4rem;
+}
+.mr-5 {
+  margin: 0, 0, 0, 5rem;
+}
+.mr-6 {
+  margin: 0, 0, 0, 6rem;
+}
+.mr-7 {
+  margin: 0, 0, 0, 7rem;
+}
+
+/* Margin left, right, bottom and top without ignoring the alt */
+.pt1 {
+  padding-top: 10px;
+}
+.pt2 {
+  padding-top: 20px;
+}
+.pt3 {
+  padding-top: 30px;
+}
+.pt4 {
+  padding-top: 40px;
+}
+.pt5 {
+  padding-top: 50px;
+}
+.pt6 {
+  padding-top: 60px;
+}
+.pt7 {
+  padding-top: 70px;
+}
+.pb1 {
+  padding-bottom: 10px;
+}
+.pb2 {
+  padding-bottom: 20px;
+}
+.pb3 {
+  padding-bottom: 30px;
+}
+.pb4 {
+  padding-bottom: 40px;
+}
+.pb5 {
+  padding-bottom: 50px;
+}
+.pb6 {
+  padding-bottom: 60px;
+}
+.pb7 {
+  padding-bottom: 70px;
+}
+.pl1 {
+  padding-left: 10px;
+}
+.pl2 {
+  padding-left: 20px;
+}
+.pl3 {
+  padding-left: 30px;
+}
+.pl4 {
+  padding-left: 40px;
+}
+.pl5 {
+  padding-left: 50px;
+}
+.pl6 {
+  padding-left: 60px;
+}
+.pl7 {
+  padding-left: 70px;
+}
+.pr1 {
+  padding-right: 10px;
+}
+.pr2 {
+  padding-right: 20px;
+}
+.pr3 {
+  padding-right: 30px;
+}
+.pr4 {
+  padding-right: 40px;
+}
+.pr5 {
+  padding-right: 50px;
+}
+.pr6 {
+  padding-right: 60px;
+}
+.pr7 {
+  padding-right: 70px;
+}
+.mt1 {
+  margin-top: 1rem;
+}
+.mt2 {
+  margin-top: 2rem;
+}
+.mt3 {
+  margin-top: 3rem;
+}
+.mt4 {
+  margin-top: 4rem;
+}
+.mt5 {
+  margin-top: 5rem;
+}
+.mt6 {
+  margin-top: 6rem;
+}
+.mt7 {
+  margin-top: 7rem;
+}
+.mb1 {
+  margin-bottom: 1rem;
+}
+.mb2 {
+  margin-bottom: 2rem;
+}
+.mb3 {
+  margin-bottom: 3rem;
+}
+.mb4 {
+  margin-bottom: 4rem;
+}
+.mb5 {
+  margin-bottom: 5rem;
+}
+.mb6 {
+  margin-bottom: 6rem;
+}
+.mb7 {
+  margin-bottom: 7rem;
+}
+.ml1 {
+  margin-left: rem;
+}
+.ml2 {
+  margin-left: 2rem;
+}
+.ml3 {
+  margin-left: 3rem;
+}
+.ml4 {
+  margin-left: 4rem;
+}
+.ml5 {
+  margin-left: 5rem;
+}
+.ml6 {
+  margin-left: 6rem;
+}
+.ml7 {
+  margin-left: 7rem;
+}
+.mr1 {
+  margin-right: 1rem;
+}
+.mr2 {
+  margin-right: 2rem;
+}
+.mr3 {
+  margin-right: 3rem;
+}
+.mr4 {
+  margin-right: 4rem;
+}
+.mr5 {
+  margin-right: 5rem;
+}
+.mr6 {
+  margin-right: 6rem;
+}
+.mr7 {
+  margin-right: 7rem;
+}
+
+/* Headings and text */
+.header-bold {
+  font-size: 1.8rem;
+  font-weight: 700px;
+}
+.header-extra-bold {
+  font-size: 1.8rem;
+  font-weight: 800px;
+}
+.header-large {
+  font-size: 1.5rem;
+}
+.text-large {
+  font-size: 1.2rem;
+}
+.normal-text {
+  font-size: 1rem;
+}
+.underlined-text {
+  text-decoration: underline;
+}
+.primary-text {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.small-text {
+  font-size: 12px;
+}
+
+/* Utilities and others */
+.bold {
+  font-weight: bold;
+}
+.i-text {
+  font-style: italic;
+}
+.text-special {
+  color: var(--secondary-color);
+}
+
+/* Flex and grid related classes */
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-col {
+  flex-direction: column;
+}
+.grid-col-2-fr {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-col-3-fr {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-col-4-fr {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-col-5-fr {
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid-row {
+  grid-template-columns: repeat(1, 1fr);
+}
+.grid-gap1 {
+  grid-gap: 0.75rem;
+}
+.grid-gap-1 {
+  grid-gap: 1rem;
+}
+.grid-gap2 {
+  grid-gap: 1.5rem;
+}
+.grid-gap-2 {
+  grid-gap: 2rem;
+}
+.grid-gap3 {
+  grid-gap: 2.5rem;
+}
+.grid-gap-3 {
+  grid-gap: 3rem;
+}
+.grid-gap4 {
+  grid-gap: 3.5rem;
+}
+.grid-gap-4 {
+  grid-gap: 4rem;
+}
+.justify-con-center {
+  justify-content: center;
+}
+.justify-con-left {
+  justify-content: left;
+}
+.justify-con-space-between {
+  justify-content: space-between;
+}
+.justify-con-space-around {
+  justify-content: space-around;
+}
+.justify-con-baseline {
+  justify-content: baseline;
+}
+.justify-con-right {
+  justify-content: right;
+}
+.justify-con-l-baseline {
+  justify-content: last baseline;
+}
+.align-items-center {
+  align-items: center;
+}
+.align-items-start {
+  align-items: flex-start;
+}
+.align-items-end {
+  align-items: flex-end;
+}
+.align-items-baseline {
+  align-items: baseline;
+}
+.align-items-stretch {
+  align-items: stretch;
+}
+.align-self-center {
+  align-self: center;
+}
+.align-self-start {
+  align-self: flex-start;
+}
+.align-self-end {
+  align-self: flex-end;
+}
+.align-self-baseline {
+  align-self: baseline;
+}
+.align-content-center {
+  align-content: center;
+}
+.align-content-start {
+  align-content: flex-start;
+}
+.align-content-end {
+  align-content: flex-end;
+}
+.align-content-between {
+  align-content: space-between;
+}
+.align-content-around {
+  align-content: space-around;
+}
+.justify-self-center {
+  justify-self: center;
+}
+.justify-self-normal {
+  justify-self: normal;
+}
+.justify-self-unset {
+  justify-self: unset;
+}
+.justify-self-start {
+  justify-self: flex-start;
+}
+.justify-self-end {
+  justify-self: flex-end;
+}
+.justify-self-right {
+  justify-self: right;
+}
+.justify-self-left {
+  justify-self: left;
+}
+.justify-items-center {
+  justify-items: center;
+}
+.justify-items-right {
+  justify-items: right;
+}
+.justify-items-left {
+  justify-items: left;
+}
+.justify-items-legacy {
+  justify-items: legacy;
+}
+.justify-items-start {
+  justify-items: start;
+}
+.justify-items-end {
+  justify-items: end;
+}
+
+/* Colors and backgrounds */
+.bg-dark {
+  background-color: var(--dark-color);
+}
+.bg-light {
+  background-color: var(--light-color);
+}
+.bg-grey {
+  background-color: var(--grey-color);
+}
+.bg-yellow {
+  background-color: var(--yellow-color);
+}
+.bg-purple {
+  background-color: var(--dark-purple-color);
+}
+.bg-primary {
+  background-color: var(--primary-color);
+}
+.bg-secondary {
+  background-color: var(--secondary-color);
+}
+.bg-save {
+  background-color: var(--dark-save-color);
+}
+.bg-danger {
+  background-color: var(--danger-color);
+}
+.color-dark {
+  color: var(--dark-color);
+}
+.color-light {
+  color: var(--light-color);
+}
+.color-yellow {
+  color: var(--yellow-color);
+}
+.color-success {
+  color: var(--primary-color);
+}
+.color-success-light {
+  color: var(--secondary-color);
+}
+.color-save {
+  color: var(--dark-save-color);
+}
+.color-red {
+  color: var(--danger-color);
+}
+
+/* Extra features */
+.wrapper-mid {
+  margin: auto;
+  max-width: 1100px;
+}
+.wrapper-wide {
+  margin: auto;
+  max-width: 1300px;
+}
+.wrapper-small {
+  margin: auto;
+  max-width: 700px;
+}
+.wrapper {
+  margin: auto;
+  padding: 2rem 1rem;
+}
+.text-align-center {
+  text-align: center;
+}
+.text-align-left {
+  text-align: left;
+}
+.text-align-right {
+  text-align: right;
+}
+.text-align-justify {
+  text-align: justify;
+}
+.b1 {
+  border: 1px solid inherit;
+}
+.b2 {
+  border: 2px solid inherit;
+}
+.b-bt1 {
+  border-bottom: 1px solid inherit;
+}
+.b-bt2 {
+  border-bottom: 2px solid inherit;
+}
+.container-wrapping {
+  border: 1px solid #000000;
+  padding: 2rem 1rem;
+  margin: 1rem;
+}
+.block {
+  display: block;
+}
+.i-block {
+  display: inline-block;
+}
+.inline {
+  display: inline;
+}
+.list-none {
+  list-style: none;
+}
+/* Form design classes */
+
+.form-container {
+  padding: 2rem 1rem;
+}
+.form-input,
+.form-select {
+  width: 100%;
+  display: block;
+  height: 30px;
+  border: 1px solid var(--hover-color);
+  border-radius: 10px;
+  padding-left: 10px;
+}
+.form-label {
+  display: block;
+  padding-bottom: 10px;
+  font-size: 1rem;
+}
+.button {
+  border-radius: 20px;
+  border: 1px solid var(--dark-color);
+}
+.form-textarea {
+  width: 100%;
+  display: block;
+  border: 1px solid var(--hover-color);
+  border-radius: 10px;
+}
+.form-parent {
+  padding: 1rem 7px;
+}
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+}
+
+/* Hover effects */
+
+/* Button */
+.btn-classic {
+  padding: 7px 20px;
+  border-radius: 10px;
+  border: 1pxn solid inherit;
+}
+
+/* Lists */
+
+/* Extra */
+.w-100 {
+  width: 100%;
+}
